@@ -1,0 +1,486 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+    <af:document title="requestPage.jsf" id="d1">
+        <af:form id="f1">
+            <af:resource type="javascript">
+          function validate(){
+         
+       if( ValidateEmail(document.getElementById('it38').firstElementChild.value)){
+           alert('goood');
+       }else{
+           x.firstElementChild.value = null;
+       }
+        
+          };
+          function ValidateEmail(mail) 
+{
+ if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(document.getElementById('it38').firstElementChild.value))
+  {
+    return (true)
+  }
+  document.getElementById('it38').firstElementChild.value = null;
+    alert("You have entered an invalid email address!")
+    return (false)
+}
+            </af:resource>
+            <af:panelHeader text="#{res.regestRequest}" id="ph1">
+                        <af:panelAccordion id="pa1" dimensionsFrom="children" discloseMany="true" discloseNone="true">
+                            <af:showDetailItem text="#{res.RequestData}" id="ddwwd5">
+                                <af:panelGroupLayout>
+                                    <af:panelHeader text="#{res.RequestData}">
+                                        <af:panelGroupLayout id="pgl1t" styleClass="row" partialTriggers="rmsoc22">
+                                            <af:panelGroupLayout id="pgl3t" styleClass="col-md-3 col-xs-12"> 
+                                                <af:outputLabel value="#{res.request_number}" id="ol3"/>
+                                                <af:inputText id="id1t" autoSubmit="true" 
+                                                              value="#{requestbean.reqDto.requestNumber}"
+                                                              disabled="true" label="#{res.request_number}"
+                                                              simple="true"/>
+                                            </af:panelGroupLayout>
+                                            <af:panelGroupLayout id="pgl2t" styleClass="col-md-3 col-xs-12">
+                                                <af:outputLabel value="#{res.requesr_date}" id="ol2"/>
+                                                <af:inputDate id="tx1t" styleClass="required-style"
+                                                        
+                                                              value="#{requestbean.reqDto.submissionDate}"
+                                                              autoSubmit="true" simple="true">
+                                                    <af:convertDateTime pattern="dd/MM/yyyy"/>
+                                                </af:inputDate>
+                                            </af:panelGroupLayout>
+                                            <af:panelGroupLayout id="pgl4t" styleClass="col-md-3 col-xs-12">
+                                                <af:outputLabel value="#{res.REQUEST_type}" id="ol4"/>
+                                                <af:selectOneChoice label="#{res.REQUEST_STATUS}"
+                                                                    styleClass="search2 required-style"
+                                                                    value="#{requestbean.reqDto.coFileType.id}"
+                                                                    autoSubmit="true" valuePassThru="true"
+                                                                    unselectedLabel="#{res.choose_one}" simple="true"
+                                                                    id="rmsoc22">
+
+                                                    <f:selectItems value="#{requestbean.requestTypes}" id="si32"
+                                                                   itemLabel="2"/>
+                                                </af:selectOneChoice>
+                                            </af:panelGroupLayout>
+                                            <af:panelGroupLayout id="pgl5t" styleClass="col-md-3 col-xs-12">
+                                                <af:outputLabel value="#{res.SUBMITTED_BY}" id="ol1"/>
+                                                <af:selectOneChoice value="#{requestbean.reqDto.submiitingEntityId}"
+                                                                    autoSubmit="true"
+                                                                    styleClass="search2 required-style"
+                                                                    unselectedLabel="#{res.choose_one}" simple="true"
+                                                                    disabled="#{requestBean.disableBasicData}"
+                                                                    id="rmsoc232">
+                                                    <f:selectItems value="#{requestbean.incomingEntites}" id="si2"
+                                                                   itemLabel="2"/>
+                                                </af:selectOneChoice>
+                                            </af:panelGroupLayout>
+                                            <af:panelGroupLayout id="pgle3dt" styleClass="col-md-3 col-xs-12">
+                                                <af:outputLabel value="#{res.destination_received_from}" id="oel3"/>
+                                                <af:inputText id="idd1t" autoSubmit="true"
+                                                              value="#{requestbean.userData.entityName}" disabled="true"
+                                                              simple="true"/>
+                                            </af:panelGroupLayout>
+                                            <af:panelGroupLayout id="pgl1" styleClass="col-md-3 col-xs-12"
+                                                                 partialTriggers="rmsoc22">
+                                                <af:outputLabel value="#{res.send_COUNTRY}" id="ol5"/>
+                                                <af:selectOneChoice value="#{requestbean.reqDto.coPartyList.get(0).country.id }"
+                                                                    unselectedLabel="#{res.choose_one}"
+                                                                    styleClass="search2"
+                                                                    autoSubmit="true" simple="true" id="soc1">
+                                                    <f:selectItems value="#{requestbean.countries}" id="si1"
+                                                                   itemLabel="2"/>
+                                                </af:selectOneChoice>
+                                            </af:panelGroupLayout>
+                                            <af:panelGroupLayout id="pgl5" styleClass="col-md-3 col-xs-12"
+                                                                 partialTriggers="rmsoc22">
+                                                <af:outputLabel value="#{res.get_COUNTRY}" id="ol9"/>
+                                                <af:selectOneChoice value="#{requestbean.reqDto.country.id}"
+                                                                    unselectedLabel="#{res.choose_one}" simple="true"
+                                                                    styleClass="search2" id="soc2" autoSubmit="true">
+                                                    <f:selectItems value="#{requestbean.countries}" id="si3"
+                                                                   itemLabel="2"/>
+                                                </af:selectOneChoice>
+                                            </af:panelGroupLayout>
+                                              <af:panelGroupLayout id="pgl6" styleClass="col-md-3 col-xs-12">
+                                                <af:outputLabel value="#{res.Port_receiving_request}" id="ol11"/>
+                                                <af:selectOneChoice value="#{requestbean.reqDto.receivingTypeId}"
+                                                                    unselectedLabel="#{res.choose_one}"
+                                                                    styleClass="search2"
+                                                                    autoSubmit="true"
+                                                                    label="#{res.Port_receiving_request}" simple="true"
+                                                                    id="soc3">
+                                                    <f:selectItems value="#{requestbean.receivingTypes}" id="si4"
+                                                                   itemLabel="2"/>
+                                                </af:selectOneChoice>
+                                            </af:panelGroupLayout>
+                                            <af:panelGroupLayout styleClass="col-md-3 col-xs-12" id="pgl13">
+                                                <af:outputLabel value="#{res.request_subject}" id="ol7"/>
+                                                <af:inputText simple="true" styleClass="required-style"
+                                                              autoSubmit="true"
+                                                              value="#{requestbean.reqDto.subject}"
+                                                               rows="2"
+                                                              label="#{res.request_subject}" id="it4"/>
+                                            </af:panelGroupLayout>
+                                            <af:panelGroupLayout styleClass="col-md-3 col-xs-12" id="pgl2">
+                                                <af:outputLabel value="#{res.name_accused}" id="ol6"/>
+                                                <af:inputText simple="true" styleClass="required-style"
+                                                              autoSubmit="true"
+                                                              value="#{requestbean.reqDto.coPartyList.get(0).name}"
+                                                              label="#{res.name_accused}" id="it1"/>
+                                            </af:panelGroupLayout>
+                                            <af:panelGroupLayout id="pgls34s12" styleClass="col-md-3 col-xs-12">
+                                                <af:outputLabel value="#{res.link}" id="ol10"/>
+                                                <af:selectOneRadio id="related-to" layout="horizontal" autoSubmit="true"
+                                                                   disabled="#{requestBean.disableBasicData}"
+                                                                   value="#{requestbean.reqDto.corelationTypeId}">
+                                                    <af:selectItem label="#{res.petition}" value="1" id="si232"/>
+                                                    <af:selectItem label="#{res.Case}" value="2" id="s2i1"/>
+                                                    <af:selectItem label="#{res.notRelated}" value="3" id="s2i5"/>
+                                                </af:selectOneRadio>
+                                            </af:panelGroupLayout>
+                                            <af:panelGroupLayout partialTriggers="related-to"
+                                                                 visible="#{requestbean.reqDto.corelationTypeId == 1}"
+                                                                 styleClass="row">
+                                                <af:panelGroupLayout id="pgl35" styleClass="row m-0">
+                                                    <af:panelGroupLayout id="pgl16"
+                                                                         styleClass="col-md-3 col-xs-12 pr-0">
+                                                        <af:outputLabel value="#{res.petition_Number}" id="ol15"/>
+                                                        <af:inputText id="it44" autoSubmit="true"
+                                                                      styleClass="required-style"
+                                                                      value="#{requestbean.reqDto.petitionNumber}"
+                                                                      label="#{res.petition_Number}" simple="true"/>
+                                                    </af:panelGroupLayout>
+                                                </af:panelGroupLayout>
+                                                <af:panelGroupLayout id="pgl9" styleClass="col-md-3 col-xs-12">
+                                                    <af:outputLabel value=" " id="old15"/>
+                                                    <af:button text="#{res.searchForPet}" id="b2"
+                                                               action="#{requestbean.searchPet}"/> 
+                                                </af:panelGroupLayout>
+                                                <af:panelGroupLayout styleClass="col-md-3 col-xs-12" id="pgl42"
+                                                visible="#{requestbean.disableData}">
+                                                <af:inputText simple="true" styleClass="required-style" disabled="true" partialTriggers="b2"
+                                                              autoSubmit="true"
+                                                              value="#{requestbean.result}"/>
+                                            </af:panelGroupLayout>
+                                                </af:panelGroupLayout>
+                                                <!--<af:panelGroupLayout styleClass="col-md-6  col-sm-12" id="pgl23" > 
+                                          <af:button text="#{res.save}" partialSubmit="true" immediate="true"
+                                       action="#{requestbean.save}" id="b1"/>
+                        </af:panelGroupLayout>-->
+                                                
+                                            
+                                            </af:panelGroupLayout>
+                                                 </af:panelHeader>
+                                                 
+                                </af:panelGroupLayout>
+                            </af:showDetailItem>
+                            <af:showDetailItem id="tab3" text="#{res.applicant_data}">
+                                <af:panelGroupLayout id="pgl92">
+                                    <af:panelHeader text="#{res.applicant}" id="ph2">
+                                        <af:panelGroupLayout id="pgl4">
+                                            <af:panelGroupLayout id="pgl73">
+                                                <af:panelGroupLayout partialTriggers="soc7sss2ss">
+                                                    <af:panelGroupLayout styleClass="row" id="pgl71">
+                                                        <af:panelGroupLayout id="pgl7" styleClass="col-md-3 col-xs-12">
+                                                            <af:outputLabel value="#{res.applicant}" id="ol24"/>
+                                                            <af:selectOneChoice value="#{requestbean.reqDto.coApplicanstList.get(0).applicantTypeId}"
+                                                                                label="#{res.applicant}"
+                                                                                styleClass="required-style"
+                                                                                unselectedLabel="#{res.choose_one}"
+                                                                                autoSubmit="true" simple="true"
+                                                                                id="soc7sss2ss">
+                                                                <f:selectItems value="#{requestbean.applicantTypes}"
+                                                                               id="si12"/>
+                                                            </af:selectOneChoice>
+                                                        </af:panelGroupLayout>
+                                                         <af:panelGroupLayout styleClass="col-md-3  col-sm-12"
+                                                                             id="pgl76">
+                                                            <af:outputLabel value="#{res.fullname}" id="ol53"/>
+                                                            <af:inputText value="#{requestbean.reqDto.coApplicanstList.get(0).name}"
+                                                                          rendered="true" autoComplete="off"
+                                                                          label="#{res.fullname}" simple="true"
+                                                                          autoSubmit="true" styleClass="required-style"
+                                                                          id="it33"/>
+                                                        </af:panelGroupLayout>
+                                                        <af:panelGroupLayout styleClass="col-md-3  col-sm-12"
+                                                                             id="pgl77">
+                                                            <af:outputLabel value="#{res.addNewPetition_nationalityId}"
+                                                                            id="ol54"/>
+                                                            <af:selectOneChoice styleClass="required-style"
+                                                                                immediate="true" id="nationalityId"
+                                                                                autoSubmit="true"
+                                                                                unselectedLabel="#{res.choose_one}"
+                                                                                value="#{requestbean.reqDto.coApplicanstList.get(0).nationalityLkpId}"
+                                                                                simple="true">
+                                                                <f:selectItems value="#{requestbean.nationalities}"
+                                                                               id="si36"/>
+                                                            </af:selectOneChoice>
+                                                        </af:panelGroupLayout>
+                                                        <af:panelGroupLayout styleClass="col-md-3  col-sm-12"
+                                                                             visible="#{requestbean.reqDto.coApplicanstList.get(0).nationalityLkpId == 41}"
+                                                                             partialTriggers="nationalityId" id="pgl78">
+                                                            <af:outputLabel value="#{res.addNewPetition_nationalId}"
+                                                                            id="ol55"/>
+                                                            <af:inputText id="nationaId" autoSubmit="true"
+                                                                          styleClass="required-style"
+                                                                          value="#{requestbean.reqDto.coApplicanstList.get(0).nationalNumber}"
+                                                                          autoComplete="off" maximumLength="14"
+                                                                          simple="true"/>
+                                                        </af:panelGroupLayout>
+                                                                    </af:panelGroupLayout>
+                                                                     <af:panelGroupLayout styleClass="row" id="pgl82"
+                                                                         partialTriggers="birthOfDate">
+                                                        <af:panelGroupLayout styleClass="col-md-3  col-sm-12"
+                                                                             visible="#{requestbean.reqDto.coApplicanstList.get(0).nationalityLkpId == 42}"
+                                                                             partialTriggers="nationalityId" id="pgl91">
+                                                            <af:outputLabel value="#{res.addNewPetition_otherNationalId}"
+                                                                            id="ol64"/>
+                                                            <af:inputText value="#{requestbean.reqDto.coApplicanstList.get(0).passportNumber}"
+                                                                          styleClass="required-style" rendered="true"
+                                                                          autoSubmit="true" maximumLength="15"
+                                                                          simple="true"
+                                                                          autoComplete="off" id="it40">
+                                                                <af:validateRegExp pattern="^[a-zA-Z0-9]+$"
+                                                                                   messageDetailNoMatch="#{res.validatePassport}"
+                                                                                   hint="#{res.validatePassport}"/>
+                                                                <af:validateLength maximum="15" minimum="0"
+                                                                                   messageDetailNotInRange="#{res.addNewPetition_OtherNational}"/>
+                                                            </af:inputText>
+                                                        </af:panelGroupLayout>
+                                                        <af:panelGroupLayout styleClass="col-md-3  col-sm-12" id="pgl85"
+                                                                             visible="#{requestbean.reqDto.coApplicanstList.get(0).nationalityLkpId == 41}">
+                                                            <af:outputLabel value="#{res.gender}" id="ol60"/>
+                                                            <af:selectOneChoice styleClass="search2" unselectedLabel=""
+                                                                                partialTriggers="nationaId nationalityId"
+                                                                                autoSubmit="true" 
+                                                                                value="#{requestbean.reqDto.coApplicanstList.get(0).sexLkpId}"
+                                                                                simple="true" id="soc12">
+                                                                <f:selectItems value="#{requestbean.genders}"/>
+                                                            </af:selectOneChoice>
+                                                        </af:panelGroupLayout>
+                                                        <af:panelGroupLayout styleClass="col-md-3  col-sm-12" id="pgl83"
+                                                                             visible="#{requestbean.reqDto.coApplicanstList.get(0).nationalityLkpId == 41}">
+                                                            <af:outputLabel value="#{res.age}" id="ol58"/>
+                                                            <af:inputText value="#{requestbean.reqDto.coApplicanstList.get(0).age}"
+                                                                          autoSubmit="true" 
+                                                                          partialTriggers="nationaId nationalityId birthOfDate"
+                                                                          simple="true" autoComplete="off"
+                                                                          id="partyAge"/>
+                                                        </af:panelGroupLayout>
+                                                        <af:panelGroupLayout styleClass="col-md-3  col-sm-12" id="dffs"
+                                                                             visible="#{requestbean.reqDto.coApplicanstList.get(0).nationalityLkpId == 41}">
+                                                            <af:outputLabel value="#{res.dateOfBirth}" id="ol59"/>
+                                                            <af:inputDate value="#{requestbean.reqDto.coApplicanstList.get(0).birthDate}"
+                                                                          autoSubmit="true" 
+                                                                          partialTriggers="nationaId nationalityId"
+                                                                          simple="true" autoComplete="off"
+                                                                          id="birthOfDate"/>
+                                                        </af:panelGroupLayout>
+                                                        <af:panelGroupLayout styleClass="col-md-3  col-sm-12"
+                                                                             visible="#{requestbean.reqDto.coApplicanstList.get(0).nationalityLkpId == 41}"
+                                                                             partialTriggers="nationalityId"
+                                                                             id="pgwel12">
+                                                            <af:outputLabel value="#{res.birthState}" id="ol132"/>
+                                                            <af:inputText value="#{requestbean.reqDto.coApplicanstList.get(0).birthState}"
+                                                                          autoSubmit="true" 
+                                                                          partialTriggers="nationaId nationalityId"
+                                                                          simple="true" autoComplete="off"
+                                                                          id="birthState"/>
+                                                        </af:panelGroupLayout>
+                                                    </af:panelGroupLayout>
+                                                             <af:panelGroupLayout styleClass="row" id="pgl86">
+                                                        <af:panelGroupLayout styleClass="col-md-6 col-sm-12" id="pgl87">
+                                                            <af:outputLabel value="#{res.addNewPetition_workAddress}"
+                                                                            id="ol61"/>
+                                                            <af:inputText simple="true" styleClass="required-style"
+                                                                          value="#{requestbean.reqDto.coApplicanstList.get(0).workAddress}"
+                                                                          autoComplete="off" rows="4" columns="100"
+                                                                          autoSubmit="true" id="it37"/>
+                                                        </af:panelGroupLayout>
+                                                        <af:panelGroupLayout styleClass="col-md-3  col-sm-12"
+                                                                             id="pgl88">
+                                                            <af:outputLabel value="#{res.co_email}" id="ol62"/>
+                                                            <af:inputText value="#{requestbean.reqDto.coApplicanstList.get(0).email}"
+                                                                          styleClass="required-style" simple="true"
+                                                                          id="it38" autoComplete="off"
+                                                                          autoSubmit="true">
+                                                                <!--<af:validateRegExp pattern="^(.+)@(.+)$"
+                                                                                   messageDetailNoMatch="#{res.addNewPetition_mailValidation}"/>-->
+                                                        <af:clientListener method="validate" type="valueChange"/>
+                                                    </af:inputText>
+                                                        </af:panelGroupLayout>
+                                                        <af:panelGroupLayout styleClass="col-md-3  col-sm-12"
+                                                                             partialTriggers="nationalityId" id="pgl25">
+                                                            <af:outputLabel value="#{res.addNewPetition_homeAddressCity}"
+                                                                            id="ol21"/>
+                                                            <af:selectOneChoice styleClass="search2 required-style"
+                                                                                autosubmit="true"
+                                                                                unselectedLabel="#{res.choose_one}"
+                                                                                autoSubmit="true"
+                                                                                value="#{requestbean.reqDto.coApplicanstList.get(0).addressStateId}"
+                                                                                rendered="true" simple="true" id="soc7">
+                                                                <f:selectItems value="#{requestbean.cities}" id="si8"/>
+                                                            </af:selectOneChoice>
+                                                        </af:panelGroupLayout>
+                                                        <af:panelGroupLayout styleClass="col-md-6 col-sm-12" id="pgl80">
+                                                            <af:outputLabel value="#{res.addNewPetition_homeAddress}"
+                                                                            id="ol56"/>
+                                                            <af:inputText simple="true" styleClass="required-style"
+                                                                          value="#{requestbean.reqDto.coApplicanstList.get(0).address}"
+                                                                          rendered="true" rows="4" columns="100"
+                                                                          autoSubmit="true" id="it34"
+                                                                          autoComplete="off"/>
+                                                        </af:panelGroupLayout>
+                                                    </af:panelGroupLayout>
+                                                                 <af:panelGroupLayout styleClass="row" id="pgl89">
+                                                        <af:panelGroupLayout styleClass="col-md-3  col-sm-12"
+                                                                             id="pgl90">
+                                                            <af:outputLabel value="#{res.mobileNumber}" id="ol63"/>
+                                                            <af:inputText value="#{requestbean.reqDto.coApplicanstList.get(0).mobileNumber}"
+                                                                          styleClass="required-style" autoComplete="off"
+                                                                          maximumLength="11" simple="true" id="it39"
+                                                                          autoSubmit="true">
+                                                                <af:validateLength maximum="11" minimum="11"
+                                                                                   messageDetailNotInRange="#{res.addNewPetition_phoneValidation}"/>
+                                                                <af:validateRegExp pattern="^01[0-2|5]{1}[0-9]{8}"
+                                                                                   messageDetailNoMatch="#{res.addNewPetition_phoneValidation}"
+                                                                                   hint="#{res.addNewPetition_phoneValidation}"/>
+                                                            </af:inputText>
+                                                        </af:panelGroupLayout>
+                                                        <af:panelGroupLayout visible="#{requestbean.reqDto.coApplicanstList.get(0).nationalityLkpId ==42}"
+                                                                             styleClass="col-md-3  col-sm-12"
+                                                                             partialTriggers="nationalityId"
+                                                                             id="pg222l92">
+                                                            <af:outputLabel value="#{res.countryId}" id="ol65"/>
+                                                            <af:selectOneChoice styleClass="search2 required-style"
+                                                                                unselectedLabel="#{res.choose_one}"
+                                                                                autoSubmit="true"
+                                                                                value="#{requestbean.reqDto.coApplicanstList.get(0).countryId}"
+                                                                                simple="true" id="soc10">
+                                                                <f:selectItems value="#{requestbean.countries}"
+                                                                               id="si40"/>
+                                                            </af:selectOneChoice>
+                                                        </af:panelGroupLayout>
+                                                        <af:panelGroupLayout styleClass="col-md-3  col-sm-12"
+                                                                             id="pgl94">
+                                                            <af:outputLabel value="#{res.phoneNumber}" id="ol66"/>
+                                                            <af:inputText value="#{requestbean.reqDto.coApplicanstList.get(0).phoneNumber}"
+                                                                          autoSubmit="true" autoComplete="off"
+                                                                          simple="true" maximumLength="10"
+                                                                          id="idt41">
+                                                                <af:validateRegExp pattern="^[0-9]*$"
+                                                                                   hint="#{res.addNewPetition_phoneValidation}"
+                                                                                   messageDetailNoMatch="#{res.addNewPetition_phoneValidation}"/>
+                                                            </af:inputText>
+                                                        </af:panelGroupLayout>
+                                                    </af:panelGroupLayout>
+                                                              <af:panelGroupLayout partialTriggers="soc7sss2ss"
+                                                                         visible="#{requestbean.reqDto.coApplicanstList.get(0).applicantTypeId == 402}"
+                                                                         styleClass="row" id="pgl97">
+                                                        <af:panelGroupLayout styleClass="col-md-3  col-sm-12"
+                                                                             id="pgl98">
+                                                            <af:outputLabel value="#{res.poaEntityid}" id="ol69"/>
+                                                            <af:inputText value="#{requestbean.reqDto.coApplicanstList.get(0).lawyerAttorneyEntity}"
+                                                                          
+                                                                          styleClass="required-style" autoComplete="off"
+                                                                          autoSubmit="true" simple="true" id="it2"/>
+                                                        </af:panelGroupLayout>
+                                                        <af:panelGroupLayout styleClass="col-md-3  col-sm-12"
+                                                                             id="pgl99">
+                                                            <af:outputLabel value="#{res.lawyerCardNumber}" id="ol70"/>
+                                                            <af:inputText value="#{requestbean.reqDto.coApplicanstList.get(0).lawyerCardNumber}"
+                                                                          
+                                                                          styleClass="required-style" autoComplete="off"
+                                                                          simple="true" id="it45" autoSubmit="true"/>
+                                                        </af:panelGroupLayout>
+                                                        <af:panelGroupLayout styleClass="col-md-3  col-sm-12"
+                                                                             id="pgl95">
+                                                            <af:outputLabel value="#{res.lawyerName}" id="ol67"/>
+                                                            <af:inputText value="#{requestbean.reqDto.coApplicanstList.get(0).lawyerName}"
+                                                                          styleClass="required-style" autoComplete="off"
+                                                                          simple="true" id="it42" autoSubmit="true"/>
+                                                        </af:panelGroupLayout>
+                                                        <af:panelGroupLayout styleClass="col-md-3  col-sm-12"
+                                                                             id="pgl96">
+                                                            <af:outputLabel value="#{res.poaNumber}" id="ol68"/>
+                                                            <af:inputText value="#{requestbean.reqDto.coApplicanstList.get(0).lawyerAttorneyNumber}"
+                                                                          
+                                                                          styleClass="required-style" autoComplete="off"
+                                                                          simple="true" id="it43" autoSubmit="true"/>
+                                                        </af:panelGroupLayout>
+                                                    </af:panelGroupLayout>
+                                            </af:panelGroupLayout>
+                                        </af:panelGroupLayout>
+                                        </af:panelGroupLayout>
+                                    </af:panelHeader>
+                                </af:panelGroupLayout>
+                            </af:showDetailItem>
+                            <af:showDetailItem id="tab4" text="#{res.addNewPetition_files}">
+                                <af:panelGroupLayout id="pgl3">
+                                    <af:panelGroupLayout id="pgl24">
+                                        <af:panelGroupLayout styleClass="col-md-6  col-sm-12" id="pgl11">
+                                            <af:outputLabel value="#{res.attachmentType}" id="ol23"/>
+                                            <af:selectOneChoice styleClass="search2 required-style" autoSubmit="true"
+                                                                value="#{requestbean.justicFilesDto.typeid}" rendered="true"
+                                                                 simple="true"
+                                                                id="soc6">
+                                                <f:selectItems value="#{requestbean.attatchmentTypes}" id="si11"/>
+                                            </af:selectOneChoice>
+                                        </af:panelGroupLayout>
+                                                             <af:panelGroupLayout styleClass="col-md-6  col-sm-12"
+                                                             partialTriggers="if4111maher">
+                                            <af:outputLabel value="#{res.addNewPetition_addFile}"/>
+                                            <af:inputFile label="#{res.addNewPetition_addFile}" id="if4111maher"
+                                                          autoSubmit="true" ></af:inputFile>
+                                                          
+                                        </af:panelGroupLayout>
+                                        </af:panelGroupLayout>
+                                                 <af:panelHeader text="#{res.addNewPetition_files}"
+                                                    partialTriggers="soc6 if4111maher" id="ph5w" disclosed="true">
+                                        <af:table var="rowData" rowBandingInterval="0" rowSelection="single"
+                                                  id="t6maherw" value="#{requestBean.fileslist}" varStatus="stat"
+                                                  filterVisible="true" scrollPolicy="page" autoHeightRows="5"
+                                                  columnStretching="last" styleClass="AFStretchWidth"
+                                                  disableColumnReordering="true" columnResizing="disabled">
+                                            <af:column sortable="true" headerText="#{res.findAllPetitions_serial}"
+                                                       id="c2">
+                                                <af:outputText value="#{stat.index+1}" id="ot1"/>
+                                            </af:column>
+                                            <af:column sortable="false" headerText="#{res.fileName}" id="c1">
+                                                <af:outputText value="#{rowData.filename}" id="ot2"/>
+                                            </af:column>
+                                            <af:column sortable="false" headerText="#{res.fileCreatedBy}" id="c3">
+                                                <af:outputText value="#{rowData.createdBy}" id="ot3"/>
+                                            </af:column>
+                                            <af:column sortable="false" headerText="#{res.fileCreatedDate}" id="c4">
+                                                <af:outputText value="#{rowData.createdDate}" id="ot4"/>
+                                            </af:column>
+                                            <af:column sortable="false" headerText="#{res.fileCreatedPlace}" id="c5">
+                                                <af:outputText value="#{rowData.entityid.entityName}" id="ot5"/>
+                                            </af:column>
+                                            <af:column sortable="false" headerText="#{res.fileDownload}" id="c6">
+                                                <af:button text="Download" id="b3">
+                                                    <af:setActionListener from="#{rowData}"
+                                                                          to="#{requestBean.selectedDecisionFile}"/>
+                                                    <af:fileDownloadActionListener method="#{requestBean.downloadImageForDecisions}"
+                                                                                   filename="#{rowData.filename}"/>
+                                                </af:button>
+                                            </af:column>
+                                        </af:table>
+                                        <!--<f:facet name="toolbar">
+                                            <af:panelGroupLayout id="pgl38">
+                                                <af:button text="#{res.add}" actionListener="#" id="b212mahw">
+                                                    <af:clientAttribute name="param" value="addresse"/>
+                                                </af:button>
+                                            </af:panelGroupLayout>
+                                        </f:facet>-->
+                                    </af:panelHeader>
+                                         </af:panelGroupLayout>
+                            </af:showDetailItem>
+                        </af:panelAccordion>
+                    </af:panelHeader>
+                    <af:panelGroupLayout styleClass="col-md-6  col-sm-12" id="pgl23" > 
+                                          <af:button text="#{res.save}" partialSubmit="true" immediate="true"
+                                       action="#{requestbean.save}" id="b1"/>
+                        </af:panelGroupLayout>
+            
+        </af:form>
+    </af:document>
+</f:view>

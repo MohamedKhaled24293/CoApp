@@ -1,0 +1,27 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SDM>
+   <OverallProperties
+      id="OverallProperties1"/>
+   <Page
+      id="Page2">
+      <property
+         name="jspName">/requestPage.jsf</property>
+      <property
+         name="x">467.0</property>
+      <property
+         name="y">188.84473</property>
+      <property
+         name="wildcard">false</property>
+   </Page>
+   <Page
+      id="Page3">
+      <property
+         name="jspName">/allRequests.jsf</property>
+      <property
+         name="x">628.0</property>
+      <property
+         name="y">188.49414</property>
+      <property
+         name="wildcard">false</property>
+   </Page>
+</SDM>

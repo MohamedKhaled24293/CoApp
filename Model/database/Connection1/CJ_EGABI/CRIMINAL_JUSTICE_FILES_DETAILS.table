@@ -1,0 +1,1525 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<table xmlns="http://xmlns.oracle.com/jdeveloper/1211/offlinedb">
+  <name>CRIMINAL_JUSTICE_FILES_DETAILS</name>
+  <columns>
+    <column>
+      <name>ID</name>
+      <dataTypeUsage>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>ID</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>CRIMINAL_JUSTICE_FILES_DETAILS</name>
+              <identifier class="java.math.BigDecimal">73940</identifier>
+              <schemaName>CJ_EGABI</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>FILENAME</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">200</value>
+          </entry>
+          <entry>
+            <key>unit</key>
+            <value class="java.lang.String">BYTE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>FILENAME</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>CRIMINAL_JUSTICE_FILES_DETAILS</name>
+              <identifier class="java.math.BigDecimal">73940</identifier>
+              <schemaName>CJ_EGABI</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>FILEPATH</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">200</value>
+          </entry>
+          <entry>
+            <key>unit</key>
+            <value class="java.lang.String">BYTE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>FILEPATH</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>CRIMINAL_JUSTICE_FILES_DETAILS</name>
+              <identifier class="java.math.BigDecimal">73940</identifier>
+              <schemaName>CJ_EGABI</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>DID</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">200</value>
+          </entry>
+          <entry>
+            <key>unit</key>
+            <value class="java.lang.String">BYTE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>DID</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>CRIMINAL_JUSTICE_FILES_DETAILS</name>
+              <identifier class="java.math.BigDecimal">73940</identifier>
+              <schemaName>CJ_EGABI</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>DDOCNAME</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">200</value>
+          </entry>
+          <entry>
+            <key>unit</key>
+            <value class="java.lang.String">BYTE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>DDOCNAME</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>CRIMINAL_JUSTICE_FILES_DETAILS</name>
+              <identifier class="java.math.BigDecimal">73940</identifier>
+              <schemaName>CJ_EGABI</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>BUSINESSCASEID</name>
+      <dataTypeUsage>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>BUSINESSCASEID</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>CRIMINAL_JUSTICE_FILES_DETAILS</name>
+              <identifier class="java.math.BigDecimal">73940</identifier>
+              <schemaName>CJ_EGABI</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>BUSINESSCASEDETAILEDID</name>
+      <dataTypeUsage>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>BUSINESSCASEDETAILEDID</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>CRIMINAL_JUSTICE_FILES_DETAILS</name>
+              <identifier class="java.math.BigDecimal">73940</identifier>
+              <schemaName>CJ_EGABI</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>TEMPLATEOBJECTID</name>
+      <dataTypeUsage>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>TEMPLATEOBJECTID</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>CRIMINAL_JUSTICE_FILES_DETAILS</name>
+              <identifier class="java.math.BigDecimal">73940</identifier>
+              <schemaName>CJ_EGABI</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>PARID</name>
+      <dataTypeUsage>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>PARID</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>CRIMINAL_JUSTICE_FILES_DETAILS</name>
+              <identifier class="java.math.BigDecimal">73940</identifier>
+              <schemaName>CJ_EGABI</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>CASESCHEMAID</name>
+      <dataTypeUsage>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>CASESCHEMAID</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>CRIMINAL_JUSTICE_FILES_DETAILS</name>
+              <identifier class="java.math.BigDecimal">73940</identifier>
+              <schemaName>CJ_EGABI</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>USERID</name>
+      <dataTypeUsage>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>USERID</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>CRIMINAL_JUSTICE_FILES_DETAILS</name>
+              <identifier class="java.math.BigDecimal">73940</identifier>
+              <schemaName>CJ_EGABI</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>ENTITYID</name>
+      <dataTypeUsage>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>ENTITYID</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>CRIMINAL_JUSTICE_FILES_DETAILS</name>
+              <identifier class="java.math.BigDecimal">73940</identifier>
+              <schemaName>CJ_EGABI</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>UPLOAD_EXCEPTION</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">500</value>
+          </entry>
+          <entry>
+            <key>unit</key>
+            <value class="java.lang.String">BYTE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>UPLOAD_EXCEPTION</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>CRIMINAL_JUSTICE_FILES_DETAILS</name>
+              <identifier class="java.math.BigDecimal">73940</identifier>
+              <schemaName>CJ_EGABI</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>DOWNLOAD_EXCEPTION</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">500</value>
+          </entry>
+          <entry>
+            <key>unit</key>
+            <value class="java.lang.String">BYTE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>DOWNLOAD_EXCEPTION</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>CRIMINAL_JUSTICE_FILES_DETAILS</name>
+              <identifier class="java.math.BigDecimal">73940</identifier>
+              <schemaName>CJ_EGABI</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>STATUS</name>
+      <dataTypeUsage>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>STATUS</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>CRIMINAL_JUSTICE_FILES_DETAILS</name>
+              <identifier class="java.math.BigDecimal">73940</identifier>
+              <schemaName>CJ_EGABI</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>PIRID</name>
+      <dataTypeUsage>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>PIRID</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>CRIMINAL_JUSTICE_FILES_DETAILS</name>
+              <identifier class="java.math.BigDecimal">73940</identifier>
+              <schemaName>CJ_EGABI</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>URL</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">500</value>
+          </entry>
+          <entry>
+            <key>unit</key>
+            <value class="java.lang.String">BYTE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>URL</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>CRIMINAL_JUSTICE_FILES_DETAILS</name>
+              <identifier class="java.math.BigDecimal">73940</identifier>
+              <schemaName>CJ_EGABI</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>CREATED_BY</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">200</value>
+          </entry>
+          <entry>
+            <key>unit</key>
+            <value class="java.lang.String">BYTE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>CREATED_BY</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>CRIMINAL_JUSTICE_FILES_DETAILS</name>
+              <identifier class="java.math.BigDecimal">73940</identifier>
+              <schemaName>CJ_EGABI</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>CREATED_DATE</name>
+      <dataTypeUsage>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>DATE</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>CREATED_DATE</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>CRIMINAL_JUSTICE_FILES_DETAILS</name>
+              <identifier class="java.math.BigDecimal">73940</identifier>
+              <schemaName>CJ_EGABI</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>UPDATED_BY</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">200</value>
+          </entry>
+          <entry>
+            <key>unit</key>
+            <value class="java.lang.String">BYTE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>UPDATED_BY</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>CRIMINAL_JUSTICE_FILES_DETAILS</name>
+              <identifier class="java.math.BigDecimal">73940</identifier>
+              <schemaName>CJ_EGABI</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>UPDATED_DATE</name>
+      <dataTypeUsage>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>DATE</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>UPDATED_DATE</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>CRIMINAL_JUSTICE_FILES_DETAILS</name>
+              <identifier class="java.math.BigDecimal">73940</identifier>
+              <schemaName>CJ_EGABI</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>DETAILED_ID</name>
+      <dataTypeUsage>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>DETAILED_ID</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>CRIMINAL_JUSTICE_FILES_DETAILS</name>
+              <identifier class="java.math.BigDecimal">73940</identifier>
+              <schemaName>CJ_EGABI</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>TYPEID</name>
+      <dataTypeUsage>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>TYPEID</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>CRIMINAL_JUSTICE_FILES_DETAILS</name>
+              <identifier class="java.math.BigDecimal">73940</identifier>
+              <schemaName>CJ_EGABI</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>PARTY_DOC_TYPE</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">200</value>
+          </entry>
+          <entry>
+            <key>unit</key>
+            <value class="java.lang.String">BYTE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>PARTY_DOC_TYPE</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>CRIMINAL_JUSTICE_FILES_DETAILS</name>
+              <identifier class="java.math.BigDecimal">73940</identifier>
+              <schemaName>CJ_EGABI</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>PARTY_ID</name>
+      <dataTypeUsage>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>PARTY_ID</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>CRIMINAL_JUSTICE_FILES_DETAILS</name>
+              <identifier class="java.math.BigDecimal">73940</identifier>
+              <schemaName>CJ_EGABI</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>CITIZEN_REQUEST_ID</name>
+      <dataTypeUsage>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>CITIZEN_REQUEST_ID</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>CRIMINAL_JUSTICE_FILES_DETAILS</name>
+              <identifier class="java.math.BigDecimal">73940</identifier>
+              <schemaName>CJ_EGABI</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>TECH_PET_ID</name>
+      <dataTypeUsage>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>TECH_PET_ID</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>CRIMINAL_JUSTICE_FILES_DETAILS</name>
+              <identifier class="java.math.BigDecimal">73940</identifier>
+              <schemaName>CJ_EGABI</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>PROC_ID</name>
+      <dataTypeUsage>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">refrence to id in exc_folder_procedures الاجراءات التي حدثت للملف</value>
+        </entry>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>PROC_ID</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>CRIMINAL_JUSTICE_FILES_DETAILS</name>
+              <identifier class="java.math.BigDecimal">73940</identifier>
+              <schemaName>CJ_EGABI</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>TECH_DET_ID</name>
+      <dataTypeUsage>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>TECH_DET_ID</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>CRIMINAL_JUSTICE_FILES_DETAILS</name>
+              <identifier class="java.math.BigDecimal">73940</identifier>
+              <schemaName>CJ_EGABI</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>RESERVAION_ID</name>
+      <dataTypeUsage>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>RESERVAION_ID</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>CRIMINAL_JUSTICE_FILES_DETAILS</name>
+              <identifier class="java.math.BigDecimal">73940</identifier>
+              <schemaName>CJ_EGABI</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>CLAIM_PROC_ID</name>
+      <dataTypeUsage>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>Comment</key>
+          <value class="java.lang.String">refrence to id in exc_claim_procedures</value>
+        </entry>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>CLAIM_PROC_ID</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>CRIMINAL_JUSTICE_FILES_DETAILS</name>
+              <identifier class="java.math.BigDecimal">73940</identifier>
+              <schemaName>CJ_EGABI</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>ROW_ID</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>precision</key>
+            <value class="java.lang.String">38</value>
+          </entry>
+          <entry>
+            <key>scale</key>
+            <value class="java.lang.Long">0</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>ROW_ID</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>CRIMINAL_JUSTICE_FILES_DETAILS</name>
+              <identifier class="java.math.BigDecimal">73940</identifier>
+              <schemaName>CJ_EGABI</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>LKP_CATEGORIES_ID</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>precision</key>
+            <value class="java.lang.String">38</value>
+          </entry>
+          <entry>
+            <key>scale</key>
+            <value class="java.lang.Long">0</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>LKP_CATEGORIES_ID</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>CRIMINAL_JUSTICE_FILES_DETAILS</name>
+              <identifier class="java.math.BigDecimal">73940</identifier>
+              <schemaName>CJ_EGABI</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>HIDE_ATTACHMENT</name>
+      <dataTypeUsage>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>HIDE_ATTACHMENT</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>CRIMINAL_JUSTICE_FILES_DETAILS</name>
+              <identifier class="java.math.BigDecimal">73940</identifier>
+              <schemaName>CJ_EGABI</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>HUM_WORKING_GROUP_ID</name>
+      <dataTypeUsage>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>HUM_WORKING_GROUP_ID</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>CRIMINAL_JUSTICE_FILES_DETAILS</name>
+              <identifier class="java.math.BigDecimal">73940</identifier>
+              <schemaName>CJ_EGABI</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>HUM_PRISON_ID</name>
+      <dataTypeUsage>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>HUM_PRISON_ID</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>CRIMINAL_JUSTICE_FILES_DETAILS</name>
+              <identifier class="java.math.BigDecimal">73940</identifier>
+              <schemaName>CJ_EGABI</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>BAN_FILE_TYPE_ID</name>
+      <dataTypeUsage>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>BAN_FILE_TYPE_ID</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>CRIMINAL_JUSTICE_FILES_DETAILS</name>
+              <identifier class="java.math.BigDecimal">73940</identifier>
+              <schemaName>CJ_EGABI</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>BAN_FILE_TYPE_OTHER</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">300</value>
+          </entry>
+          <entry>
+            <key>unit</key>
+            <value class="java.lang.String">BYTE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>BAN_FILE_TYPE_OTHER</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>CRIMINAL_JUSTICE_FILES_DETAILS</name>
+              <identifier class="java.math.BigDecimal">73940</identifier>
+              <schemaName>CJ_EGABI</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>MODEL_NAME</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">300</value>
+          </entry>
+          <entry>
+            <key>unit</key>
+            <value class="java.lang.String">BYTE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>MODEL_NAME</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>CRIMINAL_JUSTICE_FILES_DETAILS</name>
+              <identifier class="java.math.BigDecimal">73940</identifier>
+              <schemaName>CJ_EGABI</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+  </columns>
+  <constraints>
+    <constraint class="oracle.javatools.db.FKConstraint">
+      <name>CJ_FILE_DET_EXC_CLAIM_PROC</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.NameBasedID">
+          <name>CLAIM_PROC_ID</name>
+          <parent class="oracle.javatools.db.NameBasedID">
+            <name>CRIMINAL_JUSTICE_FILES_DETAILS</name>
+            <schemaName>CJ_EGABI</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>CJ_EGABI</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <enabled>true</enabled>
+      <onDeleteAction>NO_ACTION</onDeleteAction>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>CJ_FILE_DET_EXC_CLAIM_PROC</name>
+            <childObjectNames>
+              <childObjectName>CLAIM_PROC_ID</childObjectName>
+            </childObjectNames>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>CRIMINAL_JUSTICE_FILES_DETAILS</name>
+              <identifier class="java.math.BigDecimal">73940</identifier>
+              <schemaName>CJ_EGABI</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <subType>FKConstraint</subType>
+            <type>CONSTRAINT</type>
+          </value>
+        </entry>
+      </properties>
+      <referenceID class="oracle.javatools.db.ReferenceID">
+        <name>EXC_PROCEDURE_CLAIM_PK</name>
+        <childObjectNames>
+          <childObjectName>ID</childObjectName>
+        </childObjectNames>
+        <parent class="oracle.javatools.db.ReferenceID">
+          <name>EXC_PROCEDURE_CLAIM</name>
+          <identifier class="java.math.BigDecimal">74202</identifier>
+          <schemaName>CJ_EGABI</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <subType>PKConstraint</subType>
+        <type>CONSTRAINT</type>
+      </referenceID>
+    </constraint>
+    <constraint class="oracle.javatools.db.FKConstraint">
+      <name>CRIM_JUST_FILES_EXC_PROCEDRES</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.NameBasedID">
+          <name>PROC_ID</name>
+          <parent class="oracle.javatools.db.NameBasedID">
+            <name>CRIMINAL_JUSTICE_FILES_DETAILS</name>
+            <schemaName>CJ_EGABI</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>CJ_EGABI</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <enabled>true</enabled>
+      <onDeleteAction>NO_ACTION</onDeleteAction>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>CRIM_JUST_FILES_EXC_PROCEDRES</name>
+            <childObjectNames>
+              <childObjectName>PROC_ID</childObjectName>
+            </childObjectNames>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>CRIMINAL_JUSTICE_FILES_DETAILS</name>
+              <identifier class="java.math.BigDecimal">73940</identifier>
+              <schemaName>CJ_EGABI</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <subType>FKConstraint</subType>
+            <type>CONSTRAINT</type>
+          </value>
+        </entry>
+      </properties>
+      <referenceID class="oracle.javatools.db.ReferenceID">
+        <name>PK_EXC_COURT_OBJECTION</name>
+        <childObjectNames>
+          <childObjectName>ID</childObjectName>
+        </childObjectNames>
+        <parent class="oracle.javatools.db.ReferenceID">
+          <name>EXC_FOLDER_PROCEDURES</name>
+          <identifier class="java.math.BigDecimal">74070</identifier>
+          <schemaName>CJ_EGABI</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <subType>PKConstraint</subType>
+        <type>CONSTRAINT</type>
+      </referenceID>
+    </constraint>
+    <constraint class="oracle.javatools.db.PKConstraint">
+      <name>CRIMINAL_JUSTICE_FILES_DET_PK</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.NameBasedID">
+          <name>ID</name>
+          <parent class="oracle.javatools.db.NameBasedID">
+            <name>CRIMINAL_JUSTICE_FILES_DETAILS</name>
+            <schemaName>CJ_EGABI</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>CJ_EGABI</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <enabled>true</enabled>
+      <indexID class="oracle.javatools.db.NameBasedID">
+        <name>CRIMINAL_JUSTICE_FILES_DET_PK</name>
+        <parent class="oracle.javatools.db.NameBasedID">
+          <name>CRIMINAL_JUSTICE_FILES_DETAILS</name>
+          <schemaName>CJ_EGABI</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>CJ_EGABI</schemaName>
+        <type>INDEX</type>
+      </indexID>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>CRIMINAL_JUSTICE_FILES_DET_PK</name>
+            <childObjectNames>
+              <childObjectName>ID</childObjectName>
+            </childObjectNames>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>CRIMINAL_JUSTICE_FILES_DETAILS</name>
+              <identifier class="java.math.BigDecimal">73940</identifier>
+              <schemaName>CJ_EGABI</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <subType>PKConstraint</subType>
+            <type>CONSTRAINT</type>
+          </value>
+        </entry>
+      </properties>
+    </constraint>
+  </constraints>
+  <indexes>
+    <index>
+      <name>CRIMINAL_JUSTICE_FILEDET_IDX01</name>
+      <columnExpressions>
+        <columnExpression>
+          <expressionSource>PARID</expressionSource>
+          <orderType>ASC</orderType>
+          <properties>
+            <entry>
+              <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+              <value class="oracle.javatools.db.ReferenceID">
+                <name>PARID</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>CRIMINAL_JUSTICE_FILEDET_IDX01</name>
+                  <identifier class="java.math.BigDecimal">75263</identifier>
+                  <parent class="oracle.javatools.db.ReferenceID">
+                    <name>CRIMINAL_JUSTICE_FILES_DETAILS</name>
+                    <identifier class="java.math.BigDecimal">73940</identifier>
+                    <schemaName>CJ_EGABI</schemaName>
+                    <type>TABLE</type>
+                  </parent>
+                  <schemaName>CJ_EGABI</schemaName>
+                  <type>INDEX</type>
+                </parent>
+                <type>IndexObject</type>
+              </value>
+            </entry>
+          </properties>
+        </columnExpression>
+      </columnExpressions>
+      <indexType>NORMAL</indexType>
+      <parallelDegree>1</parallelDegree>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>CRIMINAL_JUSTICE_FILEDET_IDX01</name>
+            <identifier class="java.math.BigDecimal">75263</identifier>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>CRIMINAL_JUSTICE_FILES_DETAILS</name>
+              <identifier class="java.math.BigDecimal">73940</identifier>
+              <schemaName>CJ_EGABI</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <schemaName>CJ_EGABI</schemaName>
+            <type>INDEX</type>
+          </value>
+        </entry>
+        <entry>
+          <key>OracleStorageProperties</key>
+          <value class="oracle.javatools.db.ora.OracleStorageProperties">
+            <bufferMode>DEFAULT</bufferMode>
+            <initialExtent>65536</initialExtent>
+            <initrans>2</initrans>
+            <logging>true</logging>
+            <maxExtent>0</maxExtent>
+            <minExtent>1</minExtent>
+            <nextExtent>1048576</nextExtent>
+            <percentFree>10</percentFree>
+            <tablespaceID class="oracle.javatools.db.ReferenceID">
+              <name>USERS</name>
+              <type>TABLESPACE</type>
+            </tablespaceID>
+          </value>
+        </entry>
+      </properties>
+      <reverse>false</reverse>
+      <schema>
+        <name>CJ_EGABI</name>
+      </schema>
+      <systemGenerated>false</systemGenerated>
+    </index>
+    <index>
+      <name>CRIMINAL_JUSTICE_FILES_DET_PK</name>
+      <columnExpressions>
+        <columnExpression>
+          <expressionSource>ID</expressionSource>
+          <orderType>ASC</orderType>
+          <properties>
+            <entry>
+              <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+              <value class="oracle.javatools.db.ReferenceID">
+                <name>ID</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>CRIMINAL_JUSTICE_FILES_DET_PK</name>
+                  <identifier class="java.math.BigDecimal">75264</identifier>
+                  <parent class="oracle.javatools.db.ReferenceID">
+                    <name>CRIMINAL_JUSTICE_FILES_DETAILS</name>
+                    <identifier class="java.math.BigDecimal">73940</identifier>
+                    <schemaName>CJ_EGABI</schemaName>
+                    <type>TABLE</type>
+                  </parent>
+                  <schemaName>CJ_EGABI</schemaName>
+                  <type>INDEX</type>
+                </parent>
+                <type>IndexObject</type>
+              </value>
+            </entry>
+          </properties>
+        </columnExpression>
+      </columnExpressions>
+      <indexType>UNIQUE</indexType>
+      <parallelDegree>1</parallelDegree>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>CRIMINAL_JUSTICE_FILES_DET_PK</name>
+            <identifier class="java.math.BigDecimal">75264</identifier>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>CRIMINAL_JUSTICE_FILES_DETAILS</name>
+              <identifier class="java.math.BigDecimal">73940</identifier>
+              <schemaName>CJ_EGABI</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <schemaName>CJ_EGABI</schemaName>
+            <type>INDEX</type>
+          </value>
+        </entry>
+        <entry>
+          <key>OracleStorageProperties</key>
+          <value class="oracle.javatools.db.ora.OracleStorageProperties">
+            <bufferMode>DEFAULT</bufferMode>
+            <initialExtent>65536</initialExtent>
+            <initrans>2</initrans>
+            <logging>true</logging>
+            <maxExtent>0</maxExtent>
+            <minExtent>1</minExtent>
+            <nextExtent>1048576</nextExtent>
+            <percentFree>10</percentFree>
+            <tablespaceID class="oracle.javatools.db.ReferenceID">
+              <name>USERS</name>
+              <type>TABLESPACE</type>
+            </tablespaceID>
+          </value>
+        </entry>
+      </properties>
+      <reverse>false</reverse>
+      <schema>
+        <name>CJ_EGABI</name>
+      </schema>
+      <systemGenerated>false</systemGenerated>
+    </index>
+    <index>
+      <name>IDX$$_00010001</name>
+      <columnExpressions>
+        <columnExpression>
+          <expressionSource>BUSINESSCASEID</expressionSource>
+          <orderType>ASC</orderType>
+          <properties>
+            <entry>
+              <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+              <value class="oracle.javatools.db.ReferenceID">
+                <name>BUSINESSCASEID</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>IDX$$_00010001</name>
+                  <identifier class="java.math.BigDecimal">75265</identifier>
+                  <parent class="oracle.javatools.db.ReferenceID">
+                    <name>CRIMINAL_JUSTICE_FILES_DETAILS</name>
+                    <identifier class="java.math.BigDecimal">73940</identifier>
+                    <schemaName>CJ_EGABI</schemaName>
+                    <type>TABLE</type>
+                  </parent>
+                  <schemaName>CJ_EGABI</schemaName>
+                  <type>INDEX</type>
+                </parent>
+                <type>IndexObject</type>
+              </value>
+            </entry>
+          </properties>
+        </columnExpression>
+        <columnExpression>
+          <expressionSource>STATUS</expressionSource>
+          <orderType>ASC</orderType>
+          <properties>
+            <entry>
+              <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+              <value class="oracle.javatools.db.ReferenceID">
+                <name>STATUS</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>IDX$$_00010001</name>
+                  <identifier class="java.math.BigDecimal">75265</identifier>
+                  <parent class="oracle.javatools.db.ReferenceID">
+                    <name>CRIMINAL_JUSTICE_FILES_DETAILS</name>
+                    <identifier class="java.math.BigDecimal">73940</identifier>
+                    <schemaName>CJ_EGABI</schemaName>
+                    <type>TABLE</type>
+                  </parent>
+                  <schemaName>CJ_EGABI</schemaName>
+                  <type>INDEX</type>
+                </parent>
+                <type>IndexObject</type>
+              </value>
+            </entry>
+          </properties>
+        </columnExpression>
+      </columnExpressions>
+      <indexType>NORMAL</indexType>
+      <parallelDegree>1</parallelDegree>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>IDX$$_00010001</name>
+            <identifier class="java.math.BigDecimal">75265</identifier>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>CRIMINAL_JUSTICE_FILES_DETAILS</name>
+              <identifier class="java.math.BigDecimal">73940</identifier>
+              <schemaName>CJ_EGABI</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <schemaName>CJ_EGABI</schemaName>
+            <type>INDEX</type>
+          </value>
+        </entry>
+        <entry>
+          <key>OracleStorageProperties</key>
+          <value class="oracle.javatools.db.ora.OracleStorageProperties">
+            <bufferMode>DEFAULT</bufferMode>
+            <initialExtent>65536</initialExtent>
+            <initrans>2</initrans>
+            <logging>true</logging>
+            <maxExtent>0</maxExtent>
+            <minExtent>1</minExtent>
+            <nextExtent>1048576</nextExtent>
+            <percentFree>10</percentFree>
+            <tablespaceID class="oracle.javatools.db.ReferenceID">
+              <name>ST_PRODCJ</name>
+              <type>TABLESPACE</type>
+            </tablespaceID>
+          </value>
+        </entry>
+      </properties>
+      <reverse>false</reverse>
+      <schema>
+        <name>CJ_EGABI</name>
+      </schema>
+      <systemGenerated>false</systemGenerated>
+    </index>
+  </indexes>
+  <properties>
+    <entry>
+      <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+      <value class="oracle.javatools.db.ReferenceID">
+        <name>CRIMINAL_JUSTICE_FILES_DETAILS</name>
+        <identifier class="java.math.BigDecimal">73940</identifier>
+        <schemaName>CJ_EGABI</schemaName>
+        <type>TABLE</type>
+      </value>
+    </entry>
+    <entry>
+      <key>OracleInMemoryProperties</key>
+      <value class="oracle.javatools.db.ora.OracleInMemoryProperties">
+        <inMemory>false</inMemory>
+      </value>
+    </entry>
+    <entry>
+      <key>OracleStorageProperties</key>
+      <value class="oracle.javatools.db.ora.OracleStorageProperties">
+        <bufferMode>DEFAULT</bufferMode>
+        <initialExtent>65536</initialExtent>
+        <initrans>1</initrans>
+        <logging>true</logging>
+        <maxExtent>0</maxExtent>
+        <minExtent>1</minExtent>
+        <nextExtent>1048576</nextExtent>
+        <percentFree>10</percentFree>
+        <tablespaceID class="oracle.javatools.db.ReferenceID">
+          <name>ST_PRODCJ</name>
+          <type>TABLESPACE</type>
+        </tablespaceID>
+      </value>
+    </entry>
+    <entry>
+      <key>OracleTableProperties</key>
+      <value class="oracle.javatools.db.ora.OracleTableProperties">
+        <parallelDegree>1</parallelDegree>
+        <tableCompression>NOCOMPRESS</tableCompression>
+      </value>
+    </entry>
+    <entry>
+      <key>TableType</key>
+      <value class="oracle.javatools.db.Table$TableType">NORMAL</value>
+    </entry>
+  </properties>
+  <schema>
+    <name>CJ_EGABI</name>
+  </schema>
+</table>

@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+    <af:document title="allRequests.jsf" id="d1">
+        <af:form id="f1">
+                
+                    <af:panelHeader text="#{res.allRequests}" id="ph5w" disclosed="true">
+                        <af:table var="row" rowBandingInterval="0" rowSelection="single" id="t6maherw"
+                                  value="#{allRequestBean.reqDtoList}" varStatus="stat" filterVisible="true"
+                                  scrollPolicy="page" autoHeightRows="30" columnStretching="last" 
+                                  styleClass="AFStretchWidth" disableColumnReordering="true" columnResizing="disabled">
+                            <af:column sortable="true" headerText="#{res.findAllPetitions_serial}" id="ce2">
+                                <af:outputText value="#{stat.index+1}" id="ote1"/>
+                            </af:column>
+                            <af:column sortable="true" headerText="#{res.request_number}" id="c2">
+                                <af:link text="#{row.requestNumber}" id="ot1" action="preview">
+                                </af:link>
+                            </af:column>
+                            
+                            <af:column  headerText="#{res.party_name}" id="c12">
+                                <af:outputText value="#{row.coPartyList.get(0).name}" id="l2"/>
+                            </af:column>
+                            <af:column sortable="true" headerText="#{res.app_name}" id="c10">
+                                <af:outputText value="#{row.coApplicanstList.get(0).name}" id="l11"/>
+                            </af:column>
+                            <af:column sortable="true" headerText="#{res.file_number}" id="c3">
+                                <af:outputText value="#{row.coFileType.futureFileNumber}" id="l4"/>
+                            </af:column>
+                            <af:column sortable="true" headerText="#{res.request_type}" id="cc3">
+                                <af:outputText value="#{row.coFileType.fileType}" id="cl4"/>
+                            </af:column>
+                            <af:column sortable="true" headerText="#{res.destination_received}" id="c6">
+                                <af:outputText value="#{row.submiitingEntity.entityName}" id="l7"/>
+                            </af:column>
+                            <!--<af:column sortable="true" headerText="#{res.REQUEST_STATUS}" id="c5">
+                                <af:outputText value="#{row.requestStatus}" id="l6"/>
+                                <af:outputText value="#{row.requestStatusId == 65 ? row.requestStatus.concat(' ').concat(res.with).concat(row.entityName) : row.requestStatus}"/>
+                            </af:column>-->
+                            <af:column sortable="true" headerText="#{res.get_COUNTRY}" id="c7">
+                                <af:outputText value="#{row.coPartyList.get(0).country.name}" id="l8"/>
+                            </af:column>
+                            <af:column sortable="true" headerText="#{res.from_requesting_state}" id="c8">
+                                <af:outputText value="#{row.country.name}" id="l9"/>
+                            </af:column>
+                            <af:column sortable="true" headerText="#{res.requesr_date}" id="c4">
+                                <af:outputText value="#{row.submissionDate}" id="l5"/>
+                            </af:column>
+                            <!--<af:column sortable="true" headerText="#{res.entity_name}" id="c9">
+                                <af:outputText value="#{row.prosecutionMemeber}" id="l10"/>
+                            </af:column>-->
+                            
+                        </af:table>
+                        <f:facet name="toolbar">
+                            <af:panelGroupLayout id="pgl38"/>
+                        </f:facet>
+                    </af:panelHeader>
+                
+        </af:form>
+    </af:document>
+</f:view>
